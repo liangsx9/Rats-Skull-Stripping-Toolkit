@@ -65,12 +65,12 @@ Rats Skull Stripping.
 
 ## 结果查看：
 - 剥离结果为nifti文件，存放于 results 文件夹下，其中 `mask_`开头的文件为剥离出来的二值化掩膜，`segresult_`开头的文件为剥除颅骨的脑组织。  
-- nii文件推荐使用mricro、mricron软件查看，也可在 \test_data\u2netp_results 文件夹下直接查看每一层的颅骨剥离结果，剥离前的逐层原始图像可在 \test_data\test_images文件夹下查看，可用于进行效果对比。  
+- nii文件推荐使用mricro、mricron软件查看，也可在 `\test_data\u2netp_results` 文件夹下直接查看每一层的颅骨剥离结果，剥离前的逐层原始图像可在 `\test_data\test_images`文件夹下查看，可用于进行效果对比。  
 
 ## 模型选择：
-u2netp0.pth代表利用13627张影像训练138200次后保存得到的权重。  
-u2netp.pth代表利用13627张影像训练584600次后保存得到的权重。  
-需要更换模型时，将模型重命名为u2netp.pth并在 saved_models 文件夹下替换即可。  
+`u2netp0.pth`代表利用13627张影像训练138200次后保存得到的权重。  
+`u2netp.pth`代表利用13627张影像训练584600次后保存得到的权重。  
+需要更换模型时，将模型重命名为`u2netp.pth`并在 `saved_models` 文件夹下替换即可。  
 
 ## 剥离效果图：
 ![image](https://github.com/DDDRN/Rats-Skull-Stripping-Toolkit/assets/42291489/a758b460-f1ab-46fe-81ed-3bb61b169abc)
